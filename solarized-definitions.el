@@ -243,7 +243,7 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (header-line (,@fg-base0 ,@bg-base02 ,@fmt-revbb)) ; Pmenu
                 (highlight (,@bg-base02))
                 (hl-line (:underline ,opt-under ,@bg-base02)) ; CursorLine
-                (isearch (,@fmt-stnd ,@fg-orange ,@bg-back)) ; IncSearch
+                (vline (:underline ,opt-under ,@bg-base02))
                 (isearch-fail (:inherit error)) ; ErrorMsg
                 (lazy-highlight (:inherit match)) ; Search
                 (menu (,@fg-base0 ,@bg-base02))
@@ -257,6 +257,7 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (shadow (,@fg-base01))
                 (trailing-whitespace (,@fmt-revr ,@fg-red))
                 (vertical-border (,@fg-base0))
+		(which-func (,@fmt-bold ,@bg-red))
                 ;; comint
                 (comint-highlight-prompt (,@fg-blue))
                 ;; compilation
